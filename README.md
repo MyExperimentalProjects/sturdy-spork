@@ -1,2 +1,2 @@
 # sturdy-spork
-Data Structures questions praticed
+Data Structures questions practiced

@@ -6,13 +6,13 @@ class DynamicProgramming{
 		if( n == 0 || n == 1){
 			return n;
 		}
-		int[] memo = new int[n+1];
-		memo[0] = 0;
-		memo[1] = 1;
+		int prevToPrev = 0, prev = 1, current = 0;
 		for(int i = 2; i <= n ; ++i){
-			memo[i] = memo[i-1] + memo[i-2];
+			current = prev + prevToPrev;
+			prevToPrev = prev;
+			prev = current;
 		}
-		return memo[n];
+		return current;
 	}
 
 	public static void main(String[] args){

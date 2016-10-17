@@ -114,7 +114,6 @@ class WeightedIntervalScheduling{
 		scheduler.add(j3);
 		scheduler.add(j2);
 		scheduler.add(j4);
-		//Collections.sort(scheduler.jobs, new FinishTimeComparator());
 		scheduler.printJobs();
 		System.out.println(scheduler.scheduleMaxProfit());
 

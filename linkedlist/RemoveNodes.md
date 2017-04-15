@@ -11,6 +11,7 @@ For example,
 Given n will always be valid.
 Try to do this in one pass.
 
+[LeetCode link](https://leetcode.com/problems/remove-nth-node-from-end-of-list/#/description)
 
 ### Explanation
 

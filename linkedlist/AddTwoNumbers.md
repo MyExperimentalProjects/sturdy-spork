@@ -76,7 +76,7 @@ So, essentially reversing the digits in the linked list makes our lives easier. 
 4. 900 + 967 - Handling carry overs at the end
 
 ### Java Implementation
-Code can be found [here](https://github.com/hkasera/sturdy-spork/blob/explanations/linkedlist/code/AddTwoNumbers.java)
+Code can be found [here](https://github.com/hkasera/sturdy-spork/blob/master/linkedlist/code/AddTwoNumbers.java)
 
 
 ### Complexity Analysis

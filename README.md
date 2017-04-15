@@ -2,4 +2,4 @@
 Data Structures questions practiced
 
 ## Resources
-http://introcs.cs.princeton.edu/java/home/
+https://leetcode.com/problems

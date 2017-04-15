@@ -54,18 +54,18 @@ So, essentially reversing the digits in the linked list makes our lives easier. 
 
 ### Pseudo Code
 
-SUM (ListNode l1, ListNode l2):
-  Handle edge cases like l1 is null, l2 is null or both are null.
-  Initialize sumList as empty list to store sum.
-  Assign runners for l1 and l2 say runner1 and runner2
-  Assign carry = 0
-  Iterate while runner1 or runner2 is not null
-      Assign sum = sum of values of runner1 and runner2 and carry
-      Assign carry = sum / 10
-      Assign sum = sum % 10
-      Store sum in the sumList
-  if carry is remaining at the end
-      Append carry to the sumList
+      SUM (ListNode l1, ListNode l2):
+        Handle edge cases like l1 is null, l2 is null or both are null.
+        Initialize sumList as empty list to store sum.
+        Assign runners for l1 and l2 say runner1 and runner2
+        Assign carry = 0
+        Iterate while runner1 or runner2 is not null
+            Assign sum = sum of values of runner1 and runner2 and carry
+            Assign carry = sum / 10
+            Assign sum = sum % 10
+            Store sum in the sumList
+        if carry is remaining at the end
+            Append carry to the sumList
       
       
 ### Test Cases

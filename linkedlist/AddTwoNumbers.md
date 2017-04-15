@@ -5,10 +5,10 @@ The digits are stored in reverse order and each of their nodes contain a single 
 Add the two numbers and return it as a linked list.
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
-Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
-Output: 7 -> 0 -> 8
+      Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+      Output: 7 -> 0 -> 8
 
-[Link](https://leetcode.com/problems/add-two-numbers/#/description)
+[LeetCode Link](https://leetcode.com/problems/add-two-numbers/#/description)
 
 ### Understanding the problem
 
@@ -39,6 +39,7 @@ Also, as expected linked list for their sum (807) will be represented as linked 
 
 Ok, think about how we actually perform addition. If we add these numbers we add it from right to left, 
 i.e units place first. So we add 2 + 5 and then 4 + 6 and 3 + 4
+
 Also, at each place while adding if the sum is greater than 9, we carry the digit over to next place and repeat the process. 
 
       Carry 0 1 0

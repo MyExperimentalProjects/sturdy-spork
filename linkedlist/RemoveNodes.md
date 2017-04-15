@@ -29,6 +29,12 @@ Once we have this, all we need to do is to point the next of the slow runner to 
 
 
 ### Code
-
+[Java implementation](https://github.com/hkasera/sturdy-spork/blob/master/linkedlist/code/RemoveNodes.java)
 
 ### Complexity
+
+##### Time Complexity 
+O(m), where m is the length of the linked list
+
+##### Space Complexity 
+O(1)

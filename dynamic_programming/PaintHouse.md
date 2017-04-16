@@ -18,3 +18,8 @@ Find the minimum cost to paint all houses.
 Now, at first the problem seems wildly complicated, but actually its very simple.
 
 
+### Implementation
+
+[Java Implementation](https://github.com/hkasera/sturdy-spork/blob/master/dynamic_programming/code/PaintHouse.java)
+
+

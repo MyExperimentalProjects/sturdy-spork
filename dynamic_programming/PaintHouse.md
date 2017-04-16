@@ -11,6 +11,10 @@ For example,
 
 Find the minimum cost to paint all houses.
 
+![Houses Colored](https://github.com/hkasera/sturdy-spork/blob/master/dynamic_programming/Screenshot%202017-04-15%2020.55.27.png)
+
 ### Approach
 
 Now, at first the problem seems wildly complicated, but actually its very simple.
+
+

@@ -11,12 +11,18 @@ For example,
 
 Find the minimum cost to paint all houses.
 
-![Houses Colored](https://github.com/hkasera/sturdy-spork/blob/master/dynamic_programming/Screenshot%202017-04-15%2020.55.27.png)
 
 ### Approach
 
 Now, at first the problem seems wildly complicated, but actually its very simple.
 
+Problem says - We have n houses, painted with one of the three colors: red, blue or green. We have to paint all the houses such that no two adjacent houses have the same color. Something like this maybe -
+
+<img src="imgs/IMG_20170417_213756.jpg" height=200px />
+
+Cost matrix can be imagined to be something like this -
+
+<img src="imgs/IMG_20170417_213801.jpg" height=200px />
 
 ### Implementation
 

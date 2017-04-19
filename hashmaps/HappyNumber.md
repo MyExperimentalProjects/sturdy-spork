@@ -10,7 +10,7 @@ A happy number is a number defined by the following process: Starting with any p
 
 <img src="https://14208-presscdn-0-76-pagely.netdna-ssl.com/wp-content/uploads/2016/05/HAPPY-NUMBER-13.png" width=250px />
 
-### Input Examples
+### Different input examples
 
 __Example 1__
 

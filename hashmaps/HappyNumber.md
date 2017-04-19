@@ -1,6 +1,6 @@
 ## Happy Number
 
-"_Did you know a number could be happy :D or sad :( ?_"
+**Did you know a number could be happy :smile: or sad :disappointed: ?**
 
 Write an algorithm to determine if a number is "happy".
 

@@ -1,4 +1,4 @@
-# sturdy-spork
+# Sturdy Spork
 Data Structures questions practiced
 
 ## Resource

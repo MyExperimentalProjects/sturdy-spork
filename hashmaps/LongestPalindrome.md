@@ -13,13 +13,20 @@ This is case sensitive, for example "Aa" is not considered a palindrome here.
     One longest palindrome that can be built is "dccaccd", whose length is 7.
     
 #### Logic
-Think about any given palindrome string. A palindrome string always has -
-- Fact 1 : atmost one letter with odd number of count.
-- Fact 2 : if the above letter is present, all except that letter will have even number of counts.
 
-For example take strings "ccacc" and "cbbc". Both the strings are palindrome and satisfy the above constraints. Take any and you will find the same.
+What is a palindrome string?
+    According to wikipedia, a palindrome string is a sequence of characters which reads the same backward as forward. 
+
+The simplest palindrome could be a single character. 
+As we increment the length of the string we can note that,
+- Fact 1 - An even length palindrome would have all characters with even number of occurences. For example *acca* or *abccba*.
+- Fact 2 - An odd length palindrome would have a single character with odd number of occurences. For example *acdca* or *abcccba*.
+
+Take any palindrome string and you will find the above is true for all.
 
 Now this fact is the key to solving our problem. Think about how can we use this?
+
+### Approach 1 -
 
 What if, we can found all the occurences of each letters in a given string. So for our input example "abccccdd", we can form something like -
 

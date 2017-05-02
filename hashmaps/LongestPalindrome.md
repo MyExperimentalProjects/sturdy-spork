@@ -12,7 +12,7 @@ This is case sensitive, for example "Aa" is not considered a palindrome here.
     Explanation:
     One longest palindrome that can be built is "dccaccd", whose length is 7.
     
-#### Logic
+### Logic
 
 What is a palindrome string?
     According to wikipedia, a palindrome string is a sequence of characters which reads the same backward as forward. 
@@ -26,7 +26,7 @@ Take any palindrome string and you will find the above is true for all.
 
 Now this fact is the key to solving our problem. Think about how can we use this?
 
-### Approach 1 -
+#### Approach 1 -
 
 What if, we can found all the occurences of each letters in a given string. So for our input example "abccccdd", we can form something like -
 

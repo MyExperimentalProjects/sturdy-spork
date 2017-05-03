@@ -75,3 +75,8 @@ I see, HashSets as very useful in this. According to the [documentation](https:/
 
 #### Java Implementation
 [Code Link](./code/LongestPalindrome.java)
+
+
+#### Fun Fact
+
+**Aibohphobia** is an irrational fear of palindromes. Spell it backwards!! [Link](http://waldentv.com/wp-content/uploads/2015/12/Palindromes_FunFactSheet_FINAL_2.pdf)

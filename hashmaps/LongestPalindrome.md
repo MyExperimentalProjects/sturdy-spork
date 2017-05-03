@@ -52,7 +52,26 @@ Let's calculate for this -
 - Using fact 2, letter b and letter c will contribute to the length of the palindrome string. length = 2+2 = 4
 - Using fact 2, 2 occurence of letter a will contribute to the length of the palindrome string. length = 4+2 = 6
 - Now we are left with a,d,e each with 1 count. Using fact 1, we can add 1 of these. length = 6+1 = 7
-    
+
+
+#### Approach 2 -
+
+In Approach 1, we are actually storing the counts of each letter and then using them to find the desired result. However, if
+we notice, we only need to add all the even counts and add 1 if any character has an odd occurence. 
+I see, HashSets as very useful in this. According to the [documentation](https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html), HashSet has a method [*add*](https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html#add(E)), which returns true if the set did not already contain the specified element. So, the pseudo code would be -
+
+    evenCharCount = 0
+    for each character in input string
+        add the character to hashset
+        if the add method returns false -> character exists in set -> even count
+            increment evenCharCount by 1
+            Remove the element from set
+    if hashset is not empty -> character with odd occurence exists
+        return 2*evenCharCount + 1
+    else
+        return 2*evenCharCount
+      
+   
 
 #### Java Implementation
 [Code Link](./code/LongestPalindrome.java)

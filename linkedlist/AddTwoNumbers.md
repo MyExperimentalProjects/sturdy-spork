@@ -13,15 +13,15 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 ### Understanding the problem
 
 This is a very interesting problem which explains how integer addition can be done via linked lists. 
-Consider addition of two numbers 342 and 465. The output of addition will be 579.
+Consider addition of two numbers 342 and 465. The output of addition will be 807.
 
       3 4 2
     + 4 6 5
     --------
       8 0 7
 
-Our question here says the input will be in the form of linked lists representing 342 and 465. 
-Also, it says the digits are stored in reverse order and each of their nodes contain a single digit. i.e.
+Our question here says the input will be in the form of *linked lists* representing 342 and 465. 
+Also, it says the digits are stored in __reverse order__ and each of their nodes contain a single digit. i.e.
 linked list for 342 will be like -
 
       2 -> 4 -> 3 
@@ -40,7 +40,11 @@ Also, as expected linked list for their sum (807) will be represented as linked 
 Ok, think about how we actually perform addition. If we add these numbers we add it from right to left, 
 i.e units place first. So we add 2 + 5 and then 4 + 6 and 3 + 4
 
-Also, at each place while adding if the sum is greater than 9, we carry the digit over to next place and repeat the process. 
+Hence, having the inputs in reverse order makes our life easier!! Once we finish solving this, think of how you could solve the problem in case the inputs weren't in reverse order!!
+
+**How do we perform addition by hand**
+- We add the digits from right to left
+- At each place while adding if the sum is greater than 9, we carry the digit over to next place and repeat the process. 
 
       Carry 0 1 0
             -----
@@ -49,15 +53,14 @@ Also, at each place while adding if the sum is greater than 9, we carry the digi
           --------
             8 0 7
       
-
-So, essentially reversing the digits in the linked list makes our lives easier. I think now framing the pseudo code is easier!!
+On the basis of the above logic, let's jump onto framing the pseudo code!!
 
 
 ### Pseudo Code
 
       SUM (ListNode l1, ListNode l2):
-        Handle edge cases like l1 is null, l2 is null or both are null.
-        Initialize sumList as empty list to store sum.
+        //Handle edge cases like l1 is null, l2 is null or both are null.
+        Initialize sumList as empty linked list to store sum.
         Assign runners for l1 and l2 say runner1 and runner2
         Assign carry = 0
         Iterate while runner1 or runner2 is not null
@@ -67,6 +70,11 @@ So, essentially reversing the digits in the linked list makes our lives easier. 
             Store sum in the sumList
         if carry is remaining at the end
             Append carry to the sumList
+
+### Analysis of pseudo code
+- For the inputs we have two lists l1, l2
+- It is always good to handle edge cases in the beginning of the method to avoid running into exceptions.
+- We use runner approach for iterating over the linkedlists.
       
       
 ### Test Cases
@@ -80,12 +88,15 @@ Code can be found [here](https://github.com/hkasera/sturdy-spork/blob/master/lin
 
 
 ### Complexity Analysis
+Let's say the inputs l1 and l2 are of size m and n respectively. 
 
 #### Time Complexity -
-O(m + n) where m and n are number of nodes in l1 and l2 respectively.
+Our code iterates over the linkedlists and hence will run in the order of m+n.
+Hence, time complexity is O(m + n) where m and n are number of nodes in l1 and l2 respectively.
 
 #### Space Complexity -
-O(m + n) where m and n are number of nodes in l1 and l2 respectively.
+In the solution, we create a sumList of size m+n.
+Hence, space complexity is O(m + n) where m and n are number of nodes in l1 and l2 respectively.
 
   
 

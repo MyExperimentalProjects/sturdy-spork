@@ -60,3 +60,16 @@ If we repeat the above process until both lists are empty, we will get our merge
         Iterate while runner1 or runner2 is not null
             Add Min (val of runner1, val of runner2) to mergedList 
             Move runner1 and runner2 to next.
+
+
+## Recursive Approach :
+
+      MERGE (ListNode l1, ListNode l2):
+        //Handle edge cases like l1 is null, l2 is null or both are null.
+        Initialize mergedList as empty linked list to store merged list.
+        mergedList = Min (val of l1, val of l2)
+        if val of l1 < val of l2 :
+            mergedList.next = MERGE (ListNode l1.next, ListNode l2)
+        else
+            mergedList.next = MERGE (ListNode l1, ListNode l2.next)
+        return mergedList

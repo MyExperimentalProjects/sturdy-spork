@@ -27,7 +27,9 @@ List 2 : 1 -> 3 -> 5
 The process will be like -
 
 Step 1. Element at first pos in List1 : 2
+
 Step 2. Element at first pos in List2 : 1
+
 Step 3. Compare above : 1 < 2 => Put 1 in the merged list and remove from List 2
 
 List 1 : 2 -> 4
@@ -39,7 +41,9 @@ Merged List : 1
 Repeat Step 1 to Step 3 again -
 
 Step 1. Element at first pos in List1 : 2
+
 Step 2. Element at first pos in List2 : 3
+
 Step 3. Compare above : 2 < 3 => Put 2 in the merged list and remove from List 1
 
 List 1 : 4
